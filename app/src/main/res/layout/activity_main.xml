@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+    </com.yandex.mapkit.mapview.MapView>
+
+    <ImageButton
+        android:id="@+id/accountM"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        app:srcCompat="@drawable/ic_account" />
+
+    <ImageButton
+        android:id="@+id/friendsM"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@+id/accountM"
+        app:layout_constraintStart_toStartOf="@+id/accountM"
+        app:layout_constraintTop_toBottomOf="@+id/accountM"
+        app:srcCompat="@drawable/ic_friends" />
+
+    <ImageButton
+        android:id="@+id/locM"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/todo"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86"
+        app:srcCompat="@drawable/ic_loc" />
+    <TextView
+        android:id="@+id/tv2M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Аккаунт"
+        android:textColor="#9233E5"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/accountM"
+        app:layout_constraintStart_toStartOf="@+id/accountM"
+        app:layout_constraintTop_toBottomOf="@+id/accountM" />
+
+    <TextView
+        android:id="@+id/tv1M"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Друзья"
+        android:textColor="#9233E5"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/friendsM"
+        app:layout_constraintStart_toStartOf="@+id/friendsM"
+        app:layout_constraintTop_toBottomOf="@+id/friendsM" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
